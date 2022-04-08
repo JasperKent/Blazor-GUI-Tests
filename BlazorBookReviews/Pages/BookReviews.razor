@@ -1,0 +1,24 @@
+﻿@page "/bookreviews"
+
+<h3>Book Reviews</h3>
+<table>
+    <thead>
+        <tr>
+            <th>
+               Title
+            </th>
+            <th>
+               Rating
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var review in Reviews)
+        {
+          <tr>
+              <td>@review.Title</td>
+              <td>@review.Rating</td>
+          </tr>
+        }
+    </tbody>
+</table>
